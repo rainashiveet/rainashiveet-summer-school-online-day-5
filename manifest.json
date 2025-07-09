@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Weather Now",
+  "version": "1.0",
+  "description": "Check real-time weather based on your location.",
+  "permissions": ["geolocation"],
+  "host_permissions": ["https://api.weatherapi.com/"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/ico.jpg"
+  }
+}

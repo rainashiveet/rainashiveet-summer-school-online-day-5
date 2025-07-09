@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 260px;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+button {
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+#weatherDisplay {
+  margin-top: 10px;
+}
+
+#error {
+  color: red;
+  margin-top: 10px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Toggle Switch */
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  top: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + .slider::before {
+  transform: translateX(20px);
+}
